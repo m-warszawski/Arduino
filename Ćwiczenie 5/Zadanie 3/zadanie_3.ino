@@ -97,7 +97,7 @@ void loop()
 void rotateServo(int servoPin, int value, int range)
 {
     int angle = map(value, 0, range - 1, 0, 180);
-    int pulseWidth = map(angle, 0, 180, 800, 2000);
+    int pulseWidth = map(angle, 0, 180, 900, 2000);
 
     digitalWrite(servoPin, HIGH);
     delayMicroseconds(pulseWidth);
